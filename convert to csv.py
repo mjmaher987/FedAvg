@@ -2,7 +2,7 @@ import os
 import pandas as pd
 
 # Directory containing the .out files
-input_directory = r"C:\Users\mjmah\OneDrive\Desktop\everything\Main\AfterAll\0-Canada\Term1\3-Special Topics\Project\outputs"
+input_directory = r"..."
 
 # Get a list of all .out files in the directory
 out_files = [f for f in os.listdir(input_directory) if f.endswith(".out")]
