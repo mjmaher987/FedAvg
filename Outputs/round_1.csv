@@ -1,0 +1,2 @@
+Round,Accuracy,Number of Clients,Rounds,Learning Rate,Batch Size,Dataset,Time Spent (s)
+1,26.12,50,1,0.01,16,CIFAR10,57.26

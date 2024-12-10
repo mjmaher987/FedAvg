@@ -1,0 +1,3042 @@
+created virtual environment CPython3.11.5.final.0-64 in 1175ms
+  creator CPython3Posix(dest=/localscratch/mjmaher.38070117.0/env, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/mjmaher/.local/share/virtualenv)
+    added seed packages: pip==24.3.1, setuptools==75.3.0, wheel==0.44.0
+  activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/torch-2.5.1+computecanada-cp311-cp311-linux_x86_64.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/torchvision-0.20.1+computecanada-cp311-cp311-linux_x86_64.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/filelock-3.16.1+computecanada-py3-none-any.whl (from torch)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/typing_extensions-4.12.2+computecanada-py3-none-any.whl (from torch)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/networkx-3.4.2+computecanada-py3-none-any.whl (from torch)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/jinja2-3.1.4+computecanada-py3-none-any.whl (from torch)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/fsspec-2024.10.0+computecanada-py3-none-any.whl (from torch)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/sympy-1.13.1+computecanada-py3-none-any.whl (from torch)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/mpmath-1.3.0+computecanada-py3-none-any.whl (from sympy==1.13.1->torch)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/numpy-2.1.1+computecanada-cp311-cp311-linux_x86_64.whl (from torchvision)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/Pillow_SIMD-9.5.0.post2+computecanada-cp311-cp311-linux_x86_64.whl (from torchvision)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/MarkupSafe-2.1.5+computecanada-cp311-cp311-linux_x86_64.whl (from jinja2->torch)
+Installing collected packages: mpmath, typing-extensions, sympy, pillow-simd, numpy, networkx, MarkupSafe, fsspec, filelock, jinja2, torch, torchvision
+Successfully installed MarkupSafe-2.1.5+computecanada filelock-3.16.1+computecanada fsspec-2024.10.0+computecanada jinja2-3.1.4+computecanada mpmath-1.3.0+computecanada networkx-3.4.2+computecanada numpy-2.1.1+computecanada pillow-simd-9.5.0.post2+computecanada sympy-1.13.1+computecanada torch-2.5.1+computecanada torchvision-0.20.1+computecanada typing-extensions-4.12.2+computecanada
+Files already downloaded and verified
+Uniform data split
+Files already downloaded and verified
+------
+------
+Number of Clients: 50
+Number of Rounds: 1000
+Local Epochs: 5
+Learning Rate: 0.01
+Batch Size: 16
+Dataset: CIFAR10
+Data Split: uniform
+------
+------
+SimpleCNN(
+  (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv2): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (fc1): Linear(in_features=4096, out_features=128, bias=True)
+  (fc2): Linear(in_features=128, out_features=10, bias=True)
+  (pool): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+)
+Round 1/1000
+Test Accuracy Global Model: 27.71%
+------
+Round 2/1000
+Test Accuracy Global Model: 34.56%
+------
+Round 3/1000
+Test Accuracy Global Model: 39.52%
+------
+Round 4/1000
+Test Accuracy Global Model: 43.40%
+------
+Round 5/1000
+Test Accuracy Global Model: 46.70%
+------
+Round 6/1000
+Test Accuracy Global Model: 48.76%
+------
+Round 7/1000
+Test Accuracy Global Model: 49.87%
+------
+Round 8/1000
+Test Accuracy Global Model: 51.32%
+------
+Round 9/1000
+Test Accuracy Global Model: 52.40%
+------
+Round 10/1000
+Test Accuracy Global Model: 53.58%
+------
+Round 11/1000
+Test Accuracy Global Model: 54.79%
+------
+Round 12/1000
+Test Accuracy Global Model: 55.45%
+------
+Round 13/1000
+Test Accuracy Global Model: 56.28%
+------
+Round 14/1000
+Test Accuracy Global Model: 56.93%
+------
+Round 15/1000
+Test Accuracy Global Model: 57.64%
+------
+Round 16/1000
+Test Accuracy Global Model: 58.55%
+------
+Round 17/1000
+Test Accuracy Global Model: 59.01%
+------
+Round 18/1000
+Test Accuracy Global Model: 59.61%
+------
+Round 19/1000
+Test Accuracy Global Model: 60.36%
+------
+Round 20/1000
+Test Accuracy Global Model: 61.01%
+------
+Round 21/1000
+Test Accuracy Global Model: 61.38%
+------
+Round 22/1000
+Test Accuracy Global Model: 61.85%
+------
+Round 23/1000
+Test Accuracy Global Model: 62.31%
+------
+Round 24/1000
+Test Accuracy Global Model: 62.98%
+------
+Round 25/1000
+Test Accuracy Global Model: 63.22%
+------
+Round 26/1000
+Test Accuracy Global Model: 63.68%
+------
+Round 27/1000
+Test Accuracy Global Model: 64.17%
+------
+Round 28/1000
+Test Accuracy Global Model: 64.21%
+------
+Round 29/1000
+Test Accuracy Global Model: 64.46%
+------
+Round 30/1000
+Test Accuracy Global Model: 64.87%
+------
+Round 31/1000
+Test Accuracy Global Model: 65.00%
+------
+Round 32/1000
+Test Accuracy Global Model: 65.33%
+------
+Round 33/1000
+Test Accuracy Global Model: 65.40%
+------
+Round 34/1000
+Test Accuracy Global Model: 65.91%
+------
+Round 35/1000
+Test Accuracy Global Model: 65.98%
+------
+Round 36/1000
+Test Accuracy Global Model: 66.14%
+------
+Round 37/1000
+Test Accuracy Global Model: 66.24%
+------
+Round 38/1000
+Test Accuracy Global Model: 66.51%
+------
+Round 39/1000
+Test Accuracy Global Model: 66.44%
+------
+Round 40/1000
+Test Accuracy Global Model: 66.59%
+------
+Round 41/1000
+Test Accuracy Global Model: 66.68%
+------
+Round 42/1000
+Test Accuracy Global Model: 66.65%
+------
+Round 43/1000
+Test Accuracy Global Model: 66.60%
+------
+Round 44/1000
+Test Accuracy Global Model: 66.88%
+------
+Round 45/1000
+Test Accuracy Global Model: 67.02%
+------
+Round 46/1000
+Test Accuracy Global Model: 67.07%
+------
+Round 47/1000
+Test Accuracy Global Model: 66.96%
+------
+Round 48/1000
+Test Accuracy Global Model: 67.07%
+------
+Round 49/1000
+Test Accuracy Global Model: 67.26%
+------
+Round 50/1000
+Test Accuracy Global Model: 67.35%
+------
+Round 51/1000
+Test Accuracy Global Model: 67.38%
+------
+Round 52/1000
+Test Accuracy Global Model: 67.35%
+------
+Round 53/1000
+Test Accuracy Global Model: 67.32%
+------
+Round 54/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 55/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 56/1000
+Test Accuracy Global Model: 67.53%
+------
+Round 57/1000
+Test Accuracy Global Model: 67.59%
+------
+Round 58/1000
+Test Accuracy Global Model: 67.59%
+------
+Round 59/1000
+Test Accuracy Global Model: 67.67%
+------
+Round 60/1000
+Test Accuracy Global Model: 67.62%
+------
+Round 61/1000
+Test Accuracy Global Model: 67.79%
+------
+Round 62/1000
+Test Accuracy Global Model: 67.95%
+------
+Round 63/1000
+Test Accuracy Global Model: 68.02%
+------
+Round 64/1000
+Test Accuracy Global Model: 67.96%
+------
+Round 65/1000
+Test Accuracy Global Model: 67.95%
+------
+Round 66/1000
+Test Accuracy Global Model: 67.82%
+------
+Round 67/1000
+Test Accuracy Global Model: 67.80%
+------
+Round 68/1000
+Test Accuracy Global Model: 67.98%
+------
+Round 69/1000
+Test Accuracy Global Model: 68.05%
+------
+Round 70/1000
+Test Accuracy Global Model: 67.85%
+------
+Round 71/1000
+Test Accuracy Global Model: 67.83%
+------
+Round 72/1000
+Test Accuracy Global Model: 67.93%
+------
+Round 73/1000
+Test Accuracy Global Model: 67.97%
+------
+Round 74/1000
+Test Accuracy Global Model: 68.02%
+------
+Round 75/1000
+Test Accuracy Global Model: 68.00%
+------
+Round 76/1000
+Test Accuracy Global Model: 67.95%
+------
+Round 77/1000
+Test Accuracy Global Model: 68.01%
+------
+Round 78/1000
+Test Accuracy Global Model: 67.97%
+------
+Round 79/1000
+Test Accuracy Global Model: 67.95%
+------
+Round 80/1000
+Test Accuracy Global Model: 67.83%
+------
+Round 81/1000
+Test Accuracy Global Model: 67.92%
+------
+Round 82/1000
+Test Accuracy Global Model: 68.03%
+------
+Round 83/1000
+Test Accuracy Global Model: 67.95%
+------
+Round 84/1000
+Test Accuracy Global Model: 68.04%
+------
+Round 85/1000
+Test Accuracy Global Model: 68.10%
+------
+Round 86/1000
+Test Accuracy Global Model: 68.05%
+------
+Round 87/1000
+Test Accuracy Global Model: 68.08%
+------
+Round 88/1000
+Test Accuracy Global Model: 68.06%
+------
+Round 89/1000
+Test Accuracy Global Model: 68.09%
+------
+Round 90/1000
+Test Accuracy Global Model: 68.10%
+------
+Round 91/1000
+Test Accuracy Global Model: 68.08%
+------
+Round 92/1000
+Test Accuracy Global Model: 68.03%
+------
+Round 93/1000
+Test Accuracy Global Model: 67.92%
+------
+Round 94/1000
+Test Accuracy Global Model: 67.99%
+------
+Round 95/1000
+Test Accuracy Global Model: 68.06%
+------
+Round 96/1000
+Test Accuracy Global Model: 68.01%
+------
+Round 97/1000
+Test Accuracy Global Model: 68.03%
+------
+Round 98/1000
+Test Accuracy Global Model: 68.06%
+------
+Round 99/1000
+Test Accuracy Global Model: 68.08%
+------
+Round 100/1000
+Test Accuracy Global Model: 68.07%
+------
+Round 101/1000
+Test Accuracy Global Model: 68.11%
+------
+Round 102/1000
+Test Accuracy Global Model: 68.14%
+------
+Round 103/1000
+Test Accuracy Global Model: 68.16%
+------
+Round 104/1000
+Test Accuracy Global Model: 68.03%
+------
+Round 105/1000
+Test Accuracy Global Model: 67.99%
+------
+Round 106/1000
+Test Accuracy Global Model: 68.10%
+------
+Round 107/1000
+Test Accuracy Global Model: 68.04%
+------
+Round 108/1000
+Test Accuracy Global Model: 68.07%
+------
+Round 109/1000
+Test Accuracy Global Model: 68.05%
+------
+Round 110/1000
+Test Accuracy Global Model: 68.10%
+------
+Round 111/1000
+Test Accuracy Global Model: 68.26%
+------
+Round 112/1000
+Test Accuracy Global Model: 68.14%
+------
+Round 113/1000
+Test Accuracy Global Model: 68.14%
+------
+Round 114/1000
+Test Accuracy Global Model: 68.16%
+------
+Round 115/1000
+Test Accuracy Global Model: 68.26%
+------
+Round 116/1000
+Test Accuracy Global Model: 68.27%
+------
+Round 117/1000
+Test Accuracy Global Model: 68.20%
+------
+Round 118/1000
+Test Accuracy Global Model: 68.16%
+------
+Round 119/1000
+Test Accuracy Global Model: 67.96%
+------
+Round 120/1000
+Test Accuracy Global Model: 68.23%
+------
+Round 121/1000
+Test Accuracy Global Model: 68.24%
+------
+Round 122/1000
+Test Accuracy Global Model: 68.31%
+------
+Round 123/1000
+Test Accuracy Global Model: 68.19%
+------
+Round 124/1000
+Test Accuracy Global Model: 68.20%
+------
+Round 125/1000
+Test Accuracy Global Model: 68.05%
+------
+Round 126/1000
+Test Accuracy Global Model: 67.84%
+------
+Round 127/1000
+Test Accuracy Global Model: 68.07%
+------
+Round 128/1000
+Test Accuracy Global Model: 67.94%
+------
+Round 129/1000
+Test Accuracy Global Model: 68.06%
+------
+Round 130/1000
+Test Accuracy Global Model: 68.07%
+------
+Round 131/1000
+Test Accuracy Global Model: 67.96%
+------
+Round 132/1000
+Test Accuracy Global Model: 67.80%
+------
+Round 133/1000
+Test Accuracy Global Model: 67.93%
+------
+Round 134/1000
+Test Accuracy Global Model: 68.01%
+------
+Round 135/1000
+Test Accuracy Global Model: 68.01%
+------
+Round 136/1000
+Test Accuracy Global Model: 68.05%
+------
+Round 137/1000
+Test Accuracy Global Model: 68.16%
+------
+Round 138/1000
+Test Accuracy Global Model: 68.07%
+------
+Round 139/1000
+Test Accuracy Global Model: 67.96%
+------
+Round 140/1000
+Test Accuracy Global Model: 67.86%
+------
+Round 141/1000
+Test Accuracy Global Model: 68.03%
+------
+Round 142/1000
+Test Accuracy Global Model: 67.96%
+------
+Round 143/1000
+Test Accuracy Global Model: 67.91%
+------
+Round 144/1000
+Test Accuracy Global Model: 67.96%
+------
+Round 145/1000
+Test Accuracy Global Model: 68.10%
+------
+Round 146/1000
+Test Accuracy Global Model: 67.89%
+------
+Round 147/1000
+Test Accuracy Global Model: 68.13%
+------
+Round 148/1000
+Test Accuracy Global Model: 68.05%
+------
+Round 149/1000
+Test Accuracy Global Model: 68.22%
+------
+Round 150/1000
+Test Accuracy Global Model: 68.05%
+------
+Round 151/1000
+Test Accuracy Global Model: 67.97%
+------
+Round 152/1000
+Test Accuracy Global Model: 67.90%
+------
+Round 153/1000
+Test Accuracy Global Model: 68.16%
+------
+Round 154/1000
+Test Accuracy Global Model: 67.88%
+------
+Round 155/1000
+Test Accuracy Global Model: 67.96%
+------
+Round 156/1000
+Test Accuracy Global Model: 67.94%
+------
+Round 157/1000
+Test Accuracy Global Model: 68.04%
+------
+Round 158/1000
+Test Accuracy Global Model: 67.88%
+------
+Round 159/1000
+Test Accuracy Global Model: 67.90%
+------
+Round 160/1000
+Test Accuracy Global Model: 67.96%
+------
+Round 161/1000
+Test Accuracy Global Model: 68.00%
+------
+Round 162/1000
+Test Accuracy Global Model: 67.93%
+------
+Round 163/1000
+Test Accuracy Global Model: 67.87%
+------
+Round 164/1000
+Test Accuracy Global Model: 67.86%
+------
+Round 165/1000
+Test Accuracy Global Model: 67.83%
+------
+Round 166/1000
+Test Accuracy Global Model: 67.80%
+------
+Round 167/1000
+Test Accuracy Global Model: 67.86%
+------
+Round 168/1000
+Test Accuracy Global Model: 67.74%
+------
+Round 169/1000
+Test Accuracy Global Model: 67.78%
+------
+Round 170/1000
+Test Accuracy Global Model: 67.82%
+------
+Round 171/1000
+Test Accuracy Global Model: 67.95%
+------
+Round 172/1000
+Test Accuracy Global Model: 67.69%
+------
+Round 173/1000
+Test Accuracy Global Model: 67.82%
+------
+Round 174/1000
+Test Accuracy Global Model: 67.78%
+------
+Round 175/1000
+Test Accuracy Global Model: 67.81%
+------
+Round 176/1000
+Test Accuracy Global Model: 67.87%
+------
+Round 177/1000
+Test Accuracy Global Model: 67.80%
+------
+Round 178/1000
+Test Accuracy Global Model: 67.79%
+------
+Round 179/1000
+Test Accuracy Global Model: 67.79%
+------
+Round 180/1000
+Test Accuracy Global Model: 67.90%
+------
+Round 181/1000
+Test Accuracy Global Model: 67.96%
+------
+Round 182/1000
+Test Accuracy Global Model: 67.82%
+------
+Round 183/1000
+Test Accuracy Global Model: 67.70%
+------
+Round 184/1000
+Test Accuracy Global Model: 67.84%
+------
+Round 185/1000
+Test Accuracy Global Model: 67.66%
+------
+Round 186/1000
+Test Accuracy Global Model: 67.69%
+------
+Round 187/1000
+Test Accuracy Global Model: 67.81%
+------
+Round 188/1000
+Test Accuracy Global Model: 67.73%
+------
+Round 189/1000
+Test Accuracy Global Model: 67.86%
+------
+Round 190/1000
+Test Accuracy Global Model: 67.82%
+------
+Round 191/1000
+Test Accuracy Global Model: 67.91%
+------
+Round 192/1000
+Test Accuracy Global Model: 67.84%
+------
+Round 193/1000
+Test Accuracy Global Model: 67.75%
+------
+Round 194/1000
+Test Accuracy Global Model: 67.95%
+------
+Round 195/1000
+Test Accuracy Global Model: 67.85%
+------
+Round 196/1000
+Test Accuracy Global Model: 67.90%
+------
+Round 197/1000
+Test Accuracy Global Model: 67.81%
+------
+Round 198/1000
+Test Accuracy Global Model: 67.95%
+------
+Round 199/1000
+Test Accuracy Global Model: 67.89%
+------
+Round 200/1000
+Test Accuracy Global Model: 67.76%
+------
+Round 201/1000
+Test Accuracy Global Model: 67.77%
+------
+Round 202/1000
+Test Accuracy Global Model: 67.83%
+------
+Round 203/1000
+Test Accuracy Global Model: 67.80%
+------
+Round 204/1000
+Test Accuracy Global Model: 67.90%
+------
+Round 205/1000
+Test Accuracy Global Model: 67.76%
+------
+Round 206/1000
+Test Accuracy Global Model: 67.79%
+------
+Round 207/1000
+Test Accuracy Global Model: 67.66%
+------
+Round 208/1000
+Test Accuracy Global Model: 67.81%
+------
+Round 209/1000
+Test Accuracy Global Model: 67.72%
+------
+Round 210/1000
+Test Accuracy Global Model: 67.75%
+------
+Round 211/1000
+Test Accuracy Global Model: 67.70%
+------
+Round 212/1000
+Test Accuracy Global Model: 67.76%
+------
+Round 213/1000
+Test Accuracy Global Model: 67.83%
+------
+Round 214/1000
+Test Accuracy Global Model: 67.76%
+------
+Round 215/1000
+Test Accuracy Global Model: 67.85%
+------
+Round 216/1000
+Test Accuracy Global Model: 67.83%
+------
+Round 217/1000
+Test Accuracy Global Model: 67.74%
+------
+Round 218/1000
+Test Accuracy Global Model: 67.84%
+------
+Round 219/1000
+Test Accuracy Global Model: 67.75%
+------
+Round 220/1000
+Test Accuracy Global Model: 67.84%
+------
+Round 221/1000
+Test Accuracy Global Model: 67.90%
+------
+Round 222/1000
+Test Accuracy Global Model: 67.80%
+------
+Round 223/1000
+Test Accuracy Global Model: 67.77%
+------
+Round 224/1000
+Test Accuracy Global Model: 67.90%
+------
+Round 225/1000
+Test Accuracy Global Model: 67.74%
+------
+Round 226/1000
+Test Accuracy Global Model: 67.86%
+------
+Round 227/1000
+Test Accuracy Global Model: 67.71%
+------
+Round 228/1000
+Test Accuracy Global Model: 67.82%
+------
+Round 229/1000
+Test Accuracy Global Model: 67.76%
+------
+Round 230/1000
+Test Accuracy Global Model: 67.81%
+------
+Round 231/1000
+Test Accuracy Global Model: 67.84%
+------
+Round 232/1000
+Test Accuracy Global Model: 67.85%
+------
+Round 233/1000
+Test Accuracy Global Model: 67.84%
+------
+Round 234/1000
+Test Accuracy Global Model: 67.74%
+------
+Round 235/1000
+Test Accuracy Global Model: 67.88%
+------
+Round 236/1000
+Test Accuracy Global Model: 67.88%
+------
+Round 237/1000
+Test Accuracy Global Model: 67.86%
+------
+Round 238/1000
+Test Accuracy Global Model: 67.77%
+------
+Round 239/1000
+Test Accuracy Global Model: 67.80%
+------
+Round 240/1000
+Test Accuracy Global Model: 67.80%
+------
+Round 241/1000
+Test Accuracy Global Model: 67.72%
+------
+Round 242/1000
+Test Accuracy Global Model: 67.74%
+------
+Round 243/1000
+Test Accuracy Global Model: 67.86%
+------
+Round 244/1000
+Test Accuracy Global Model: 67.88%
+------
+Round 245/1000
+Test Accuracy Global Model: 67.97%
+------
+Round 246/1000
+Test Accuracy Global Model: 67.95%
+------
+Round 247/1000
+Test Accuracy Global Model: 67.95%
+------
+Round 248/1000
+Test Accuracy Global Model: 67.92%
+------
+Round 249/1000
+Test Accuracy Global Model: 67.93%
+------
+Round 250/1000
+Test Accuracy Global Model: 67.88%
+------
+Round 251/1000
+Test Accuracy Global Model: 67.78%
+------
+Round 252/1000
+Test Accuracy Global Model: 67.84%
+------
+Round 253/1000
+Test Accuracy Global Model: 67.86%
+------
+Round 254/1000
+Test Accuracy Global Model: 67.89%
+------
+Round 255/1000
+Test Accuracy Global Model: 67.80%
+------
+Round 256/1000
+Test Accuracy Global Model: 67.80%
+------
+Round 257/1000
+Test Accuracy Global Model: 67.86%
+------
+Round 258/1000
+Test Accuracy Global Model: 67.78%
+------
+Round 259/1000
+Test Accuracy Global Model: 67.81%
+------
+Round 260/1000
+Test Accuracy Global Model: 67.83%
+------
+Round 261/1000
+Test Accuracy Global Model: 67.85%
+------
+Round 262/1000
+Test Accuracy Global Model: 67.88%
+------
+Round 263/1000
+Test Accuracy Global Model: 67.79%
+------
+Round 264/1000
+Test Accuracy Global Model: 67.86%
+------
+Round 265/1000
+Test Accuracy Global Model: 67.98%
+------
+Round 266/1000
+Test Accuracy Global Model: 67.92%
+------
+Round 267/1000
+Test Accuracy Global Model: 67.75%
+------
+Round 268/1000
+Test Accuracy Global Model: 67.95%
+------
+Round 269/1000
+Test Accuracy Global Model: 67.99%
+------
+Round 270/1000
+Test Accuracy Global Model: 67.96%
+------
+Round 271/1000
+Test Accuracy Global Model: 67.88%
+------
+Round 272/1000
+Test Accuracy Global Model: 67.89%
+------
+Round 273/1000
+Test Accuracy Global Model: 67.94%
+------
+Round 274/1000
+Test Accuracy Global Model: 67.76%
+------
+Round 275/1000
+Test Accuracy Global Model: 67.85%
+------
+Round 276/1000
+Test Accuracy Global Model: 67.84%
+------
+Round 277/1000
+Test Accuracy Global Model: 67.88%
+------
+Round 278/1000
+Test Accuracy Global Model: 67.94%
+------
+Round 279/1000
+Test Accuracy Global Model: 68.01%
+------
+Round 280/1000
+Test Accuracy Global Model: 67.91%
+------
+Round 281/1000
+Test Accuracy Global Model: 67.97%
+------
+Round 282/1000
+Test Accuracy Global Model: 68.06%
+------
+Round 283/1000
+Test Accuracy Global Model: 68.01%
+------
+Round 284/1000
+Test Accuracy Global Model: 67.93%
+------
+Round 285/1000
+Test Accuracy Global Model: 67.94%
+------
+Round 286/1000
+Test Accuracy Global Model: 67.92%
+------
+Round 287/1000
+Test Accuracy Global Model: 67.87%
+------
+Round 288/1000
+Test Accuracy Global Model: 67.90%
+------
+Round 289/1000
+Test Accuracy Global Model: 67.90%
+------
+Round 290/1000
+Test Accuracy Global Model: 67.92%
+------
+Round 291/1000
+Test Accuracy Global Model: 67.89%
+------
+Round 292/1000
+Test Accuracy Global Model: 68.01%
+------
+Round 293/1000
+Test Accuracy Global Model: 67.91%
+------
+Round 294/1000
+Test Accuracy Global Model: 67.96%
+------
+Round 295/1000
+Test Accuracy Global Model: 67.87%
+------
+Round 296/1000
+Test Accuracy Global Model: 68.06%
+------
+Round 297/1000
+Test Accuracy Global Model: 67.99%
+------
+Round 298/1000
+Test Accuracy Global Model: 67.92%
+------
+Round 299/1000
+Test Accuracy Global Model: 67.88%
+------
+Round 300/1000
+Test Accuracy Global Model: 67.81%
+------
+Round 301/1000
+Test Accuracy Global Model: 67.71%
+------
+Round 302/1000
+Test Accuracy Global Model: 67.87%
+------
+Round 303/1000
+Test Accuracy Global Model: 67.84%
+------
+Round 304/1000
+Test Accuracy Global Model: 67.83%
+------
+Round 305/1000
+Test Accuracy Global Model: 67.86%
+------
+Round 306/1000
+Test Accuracy Global Model: 67.84%
+------
+Round 307/1000
+Test Accuracy Global Model: 67.78%
+------
+Round 308/1000
+Test Accuracy Global Model: 67.83%
+------
+Round 309/1000
+Test Accuracy Global Model: 67.81%
+------
+Round 310/1000
+Test Accuracy Global Model: 67.84%
+------
+Round 311/1000
+Test Accuracy Global Model: 67.84%
+------
+Round 312/1000
+Test Accuracy Global Model: 67.77%
+------
+Round 313/1000
+Test Accuracy Global Model: 68.01%
+------
+Round 314/1000
+Test Accuracy Global Model: 67.89%
+------
+Round 315/1000
+Test Accuracy Global Model: 67.90%
+------
+Round 316/1000
+Test Accuracy Global Model: 67.89%
+------
+Round 317/1000
+Test Accuracy Global Model: 67.87%
+------
+Round 318/1000
+Test Accuracy Global Model: 67.88%
+------
+Round 319/1000
+Test Accuracy Global Model: 68.00%
+------
+Round 320/1000
+Test Accuracy Global Model: 67.98%
+------
+Round 321/1000
+Test Accuracy Global Model: 68.00%
+------
+Round 322/1000
+Test Accuracy Global Model: 67.97%
+------
+Round 323/1000
+Test Accuracy Global Model: 68.04%
+------
+Round 324/1000
+Test Accuracy Global Model: 67.98%
+------
+Round 325/1000
+Test Accuracy Global Model: 67.84%
+------
+Round 326/1000
+Test Accuracy Global Model: 67.88%
+------
+Round 327/1000
+Test Accuracy Global Model: 67.99%
+------
+Round 328/1000
+Test Accuracy Global Model: 67.97%
+------
+Round 329/1000
+Test Accuracy Global Model: 67.99%
+------
+Round 330/1000
+Test Accuracy Global Model: 68.04%
+------
+Round 331/1000
+Test Accuracy Global Model: 67.97%
+------
+Round 332/1000
+Test Accuracy Global Model: 67.92%
+------
+Round 333/1000
+Test Accuracy Global Model: 68.04%
+------
+Round 334/1000
+Test Accuracy Global Model: 68.06%
+------
+Round 335/1000
+Test Accuracy Global Model: 67.99%
+------
+Round 336/1000
+Test Accuracy Global Model: 68.04%
+------
+Round 337/1000
+Test Accuracy Global Model: 67.98%
+------
+Round 338/1000
+Test Accuracy Global Model: 67.98%
+------
+Round 339/1000
+Test Accuracy Global Model: 67.98%
+------
+Round 340/1000
+Test Accuracy Global Model: 68.01%
+------
+Round 341/1000
+Test Accuracy Global Model: 67.96%
+------
+Round 342/1000
+Test Accuracy Global Model: 67.90%
+------
+Round 343/1000
+Test Accuracy Global Model: 67.88%
+------
+Round 344/1000
+Test Accuracy Global Model: 67.90%
+------
+Round 345/1000
+Test Accuracy Global Model: 67.83%
+------
+Round 346/1000
+Test Accuracy Global Model: 67.90%
+------
+Round 347/1000
+Test Accuracy Global Model: 67.91%
+------
+Round 348/1000
+Test Accuracy Global Model: 67.97%
+------
+Round 349/1000
+Test Accuracy Global Model: 67.97%
+------
+Round 350/1000
+Test Accuracy Global Model: 67.99%
+------
+Round 351/1000
+Test Accuracy Global Model: 67.84%
+------
+Round 352/1000
+Test Accuracy Global Model: 67.70%
+------
+Round 353/1000
+Test Accuracy Global Model: 67.92%
+------
+Round 354/1000
+Test Accuracy Global Model: 67.84%
+------
+Round 355/1000
+Test Accuracy Global Model: 67.91%
+------
+Round 356/1000
+Test Accuracy Global Model: 67.86%
+------
+Round 357/1000
+Test Accuracy Global Model: 67.86%
+------
+Round 358/1000
+Test Accuracy Global Model: 67.91%
+------
+Round 359/1000
+Test Accuracy Global Model: 67.91%
+------
+Round 360/1000
+Test Accuracy Global Model: 67.91%
+------
+Round 361/1000
+Test Accuracy Global Model: 67.87%
+------
+Round 362/1000
+Test Accuracy Global Model: 67.92%
+------
+Round 363/1000
+Test Accuracy Global Model: 67.91%
+------
+Round 364/1000
+Test Accuracy Global Model: 67.93%
+------
+Round 365/1000
+Test Accuracy Global Model: 67.92%
+------
+Round 366/1000
+Test Accuracy Global Model: 67.98%
+------
+Round 367/1000
+Test Accuracy Global Model: 68.00%
+------
+Round 368/1000
+Test Accuracy Global Model: 67.94%
+------
+Round 369/1000
+Test Accuracy Global Model: 67.89%
+------
+Round 370/1000
+Test Accuracy Global Model: 67.88%
+------
+Round 371/1000
+Test Accuracy Global Model: 67.88%
+------
+Round 372/1000
+Test Accuracy Global Model: 67.90%
+------
+Round 373/1000
+Test Accuracy Global Model: 67.89%
+------
+Round 374/1000
+Test Accuracy Global Model: 67.91%
+------
+Round 375/1000
+Test Accuracy Global Model: 67.92%
+------
+Round 376/1000
+Test Accuracy Global Model: 67.89%
+------
+Round 377/1000
+Test Accuracy Global Model: 67.91%
+------
+Round 378/1000
+Test Accuracy Global Model: 67.94%
+------
+Round 379/1000
+Test Accuracy Global Model: 67.82%
+------
+Round 380/1000
+Test Accuracy Global Model: 67.82%
+------
+Round 381/1000
+Test Accuracy Global Model: 67.77%
+------
+Round 382/1000
+Test Accuracy Global Model: 67.88%
+------
+Round 383/1000
+Test Accuracy Global Model: 67.90%
+------
+Round 384/1000
+Test Accuracy Global Model: 67.90%
+------
+Round 385/1000
+Test Accuracy Global Model: 67.92%
+------
+Round 386/1000
+Test Accuracy Global Model: 67.94%
+------
+Round 387/1000
+Test Accuracy Global Model: 67.85%
+------
+Round 388/1000
+Test Accuracy Global Model: 67.88%
+------
+Round 389/1000
+Test Accuracy Global Model: 67.89%
+------
+Round 390/1000
+Test Accuracy Global Model: 67.88%
+------
+Round 391/1000
+Test Accuracy Global Model: 67.88%
+------
+Round 392/1000
+Test Accuracy Global Model: 67.78%
+------
+Round 393/1000
+Test Accuracy Global Model: 67.78%
+------
+Round 394/1000
+Test Accuracy Global Model: 67.77%
+------
+Round 395/1000
+Test Accuracy Global Model: 67.82%
+------
+Round 396/1000
+Test Accuracy Global Model: 67.69%
+------
+Round 397/1000
+Test Accuracy Global Model: 67.76%
+------
+Round 398/1000
+Test Accuracy Global Model: 67.80%
+------
+Round 399/1000
+Test Accuracy Global Model: 67.82%
+------
+Round 400/1000
+Test Accuracy Global Model: 67.81%
+------
+Round 401/1000
+Test Accuracy Global Model: 67.82%
+------
+Round 402/1000
+Test Accuracy Global Model: 67.83%
+------
+Round 403/1000
+Test Accuracy Global Model: 67.85%
+------
+Round 404/1000
+Test Accuracy Global Model: 67.84%
+------
+Round 405/1000
+Test Accuracy Global Model: 67.81%
+------
+Round 406/1000
+Test Accuracy Global Model: 67.79%
+------
+Round 407/1000
+Test Accuracy Global Model: 67.80%
+------
+Round 408/1000
+Test Accuracy Global Model: 67.79%
+------
+Round 409/1000
+Test Accuracy Global Model: 67.78%
+------
+Round 410/1000
+Test Accuracy Global Model: 67.81%
+------
+Round 411/1000
+Test Accuracy Global Model: 67.72%
+------
+Round 412/1000
+Test Accuracy Global Model: 67.78%
+------
+Round 413/1000
+Test Accuracy Global Model: 67.78%
+------
+Round 414/1000
+Test Accuracy Global Model: 67.76%
+------
+Round 415/1000
+Test Accuracy Global Model: 67.80%
+------
+Round 416/1000
+Test Accuracy Global Model: 67.73%
+------
+Round 417/1000
+Test Accuracy Global Model: 67.83%
+------
+Round 418/1000
+Test Accuracy Global Model: 67.80%
+------
+Round 419/1000
+Test Accuracy Global Model: 67.81%
+------
+Round 420/1000
+Test Accuracy Global Model: 67.83%
+------
+Round 421/1000
+Test Accuracy Global Model: 67.74%
+------
+Round 422/1000
+Test Accuracy Global Model: 67.82%
+------
+Round 423/1000
+Test Accuracy Global Model: 67.88%
+------
+Round 424/1000
+Test Accuracy Global Model: 67.88%
+------
+Round 425/1000
+Test Accuracy Global Model: 67.88%
+------
+Round 426/1000
+Test Accuracy Global Model: 67.86%
+------
+Round 427/1000
+Test Accuracy Global Model: 67.84%
+------
+Round 428/1000
+Test Accuracy Global Model: 67.78%
+------
+Round 429/1000
+Test Accuracy Global Model: 67.79%
+------
+Round 430/1000
+Test Accuracy Global Model: 67.82%
+------
+Round 431/1000
+Test Accuracy Global Model: 67.79%
+------
+Round 432/1000
+Test Accuracy Global Model: 67.79%
+------
+Round 433/1000
+Test Accuracy Global Model: 67.78%
+------
+Round 434/1000
+Test Accuracy Global Model: 67.77%
+------
+Round 435/1000
+Test Accuracy Global Model: 67.72%
+------
+Round 436/1000
+Test Accuracy Global Model: 67.76%
+------
+Round 437/1000
+Test Accuracy Global Model: 67.74%
+------
+Round 438/1000
+Test Accuracy Global Model: 67.78%
+------
+Round 439/1000
+Test Accuracy Global Model: 67.79%
+------
+Round 440/1000
+Test Accuracy Global Model: 67.73%
+------
+Round 441/1000
+Test Accuracy Global Model: 67.74%
+------
+Round 442/1000
+Test Accuracy Global Model: 67.84%
+------
+Round 443/1000
+Test Accuracy Global Model: 67.81%
+------
+Round 444/1000
+Test Accuracy Global Model: 67.81%
+------
+Round 445/1000
+Test Accuracy Global Model: 67.76%
+------
+Round 446/1000
+Test Accuracy Global Model: 67.79%
+------
+Round 447/1000
+Test Accuracy Global Model: 67.75%
+------
+Round 448/1000
+Test Accuracy Global Model: 67.77%
+------
+Round 449/1000
+Test Accuracy Global Model: 67.77%
+------
+Round 450/1000
+Test Accuracy Global Model: 67.78%
+------
+Round 451/1000
+Test Accuracy Global Model: 67.80%
+------
+Round 452/1000
+Test Accuracy Global Model: 67.76%
+------
+Round 453/1000
+Test Accuracy Global Model: 67.73%
+------
+Round 454/1000
+Test Accuracy Global Model: 67.76%
+------
+Round 455/1000
+Test Accuracy Global Model: 67.75%
+------
+Round 456/1000
+Test Accuracy Global Model: 67.73%
+------
+Round 457/1000
+Test Accuracy Global Model: 67.75%
+------
+Round 458/1000
+Test Accuracy Global Model: 67.80%
+------
+Round 459/1000
+Test Accuracy Global Model: 67.81%
+------
+Round 460/1000
+Test Accuracy Global Model: 67.80%
+------
+Round 461/1000
+Test Accuracy Global Model: 67.79%
+------
+Round 462/1000
+Test Accuracy Global Model: 67.75%
+------
+Round 463/1000
+Test Accuracy Global Model: 67.77%
+------
+Round 464/1000
+Test Accuracy Global Model: 67.78%
+------
+Round 465/1000
+Test Accuracy Global Model: 67.77%
+------
+Round 466/1000
+Test Accuracy Global Model: 67.77%
+------
+Round 467/1000
+Test Accuracy Global Model: 67.77%
+------
+Round 468/1000
+Test Accuracy Global Model: 67.75%
+------
+Round 469/1000
+Test Accuracy Global Model: 67.70%
+------
+Round 470/1000
+Test Accuracy Global Model: 67.72%
+------
+Round 471/1000
+Test Accuracy Global Model: 67.73%
+------
+Round 472/1000
+Test Accuracy Global Model: 67.71%
+------
+Round 473/1000
+Test Accuracy Global Model: 67.70%
+------
+Round 474/1000
+Test Accuracy Global Model: 67.70%
+------
+Round 475/1000
+Test Accuracy Global Model: 67.70%
+------
+Round 476/1000
+Test Accuracy Global Model: 67.70%
+------
+Round 477/1000
+Test Accuracy Global Model: 67.71%
+------
+Round 478/1000
+Test Accuracy Global Model: 67.71%
+------
+Round 479/1000
+Test Accuracy Global Model: 67.70%
+------
+Round 480/1000
+Test Accuracy Global Model: 67.67%
+------
+Round 481/1000
+Test Accuracy Global Model: 67.68%
+------
+Round 482/1000
+Test Accuracy Global Model: 67.69%
+------
+Round 483/1000
+Test Accuracy Global Model: 67.68%
+------
+Round 484/1000
+Test Accuracy Global Model: 67.69%
+------
+Round 485/1000
+Test Accuracy Global Model: 67.70%
+------
+Round 486/1000
+Test Accuracy Global Model: 67.68%
+------
+Round 487/1000
+Test Accuracy Global Model: 67.68%
+------
+Round 488/1000
+Test Accuracy Global Model: 67.67%
+------
+Round 489/1000
+Test Accuracy Global Model: 67.68%
+------
+Round 490/1000
+Test Accuracy Global Model: 67.67%
+------
+Round 491/1000
+Test Accuracy Global Model: 67.65%
+------
+Round 492/1000
+Test Accuracy Global Model: 67.66%
+------
+Round 493/1000
+Test Accuracy Global Model: 67.64%
+------
+Round 494/1000
+Test Accuracy Global Model: 67.65%
+------
+Round 495/1000
+Test Accuracy Global Model: 67.65%
+------
+Round 496/1000
+Test Accuracy Global Model: 67.64%
+------
+Round 497/1000
+Test Accuracy Global Model: 67.64%
+------
+Round 498/1000
+Test Accuracy Global Model: 67.60%
+------
+Round 499/1000
+Test Accuracy Global Model: 67.63%
+------
+Round 500/1000
+Test Accuracy Global Model: 67.59%
+------
+Round 501/1000
+Test Accuracy Global Model: 67.62%
+------
+Round 502/1000
+Test Accuracy Global Model: 67.62%
+------
+Round 503/1000
+Test Accuracy Global Model: 67.62%
+------
+Round 504/1000
+Test Accuracy Global Model: 67.81%
+------
+Round 505/1000
+Test Accuracy Global Model: 67.71%
+------
+Round 506/1000
+Test Accuracy Global Model: 67.70%
+------
+Round 507/1000
+Test Accuracy Global Model: 67.67%
+------
+Round 508/1000
+Test Accuracy Global Model: 67.70%
+------
+Round 509/1000
+Test Accuracy Global Model: 67.68%
+------
+Round 510/1000
+Test Accuracy Global Model: 67.70%
+------
+Round 511/1000
+Test Accuracy Global Model: 67.68%
+------
+Round 512/1000
+Test Accuracy Global Model: 67.66%
+------
+Round 513/1000
+Test Accuracy Global Model: 67.65%
+------
+Round 514/1000
+Test Accuracy Global Model: 67.65%
+------
+Round 515/1000
+Test Accuracy Global Model: 67.65%
+------
+Round 516/1000
+Test Accuracy Global Model: 67.66%
+------
+Round 517/1000
+Test Accuracy Global Model: 67.63%
+------
+Round 518/1000
+Test Accuracy Global Model: 67.63%
+------
+Round 519/1000
+Test Accuracy Global Model: 67.60%
+------
+Round 520/1000
+Test Accuracy Global Model: 67.61%
+------
+Round 521/1000
+Test Accuracy Global Model: 67.59%
+------
+Round 522/1000
+Test Accuracy Global Model: 67.60%
+------
+Round 523/1000
+Test Accuracy Global Model: 67.60%
+------
+Round 524/1000
+Test Accuracy Global Model: 67.76%
+------
+Round 525/1000
+Test Accuracy Global Model: 67.72%
+------
+Round 526/1000
+Test Accuracy Global Model: 67.66%
+------
+Round 527/1000
+Test Accuracy Global Model: 67.67%
+------
+Round 528/1000
+Test Accuracy Global Model: 67.65%
+------
+Round 529/1000
+Test Accuracy Global Model: 67.66%
+------
+Round 530/1000
+Test Accuracy Global Model: 67.68%
+------
+Round 531/1000
+Test Accuracy Global Model: 67.67%
+------
+Round 532/1000
+Test Accuracy Global Model: 67.68%
+------
+Round 533/1000
+Test Accuracy Global Model: 67.65%
+------
+Round 534/1000
+Test Accuracy Global Model: 67.66%
+------
+Round 535/1000
+Test Accuracy Global Model: 67.66%
+------
+Round 536/1000
+Test Accuracy Global Model: 67.66%
+------
+Round 537/1000
+Test Accuracy Global Model: 67.66%
+------
+Round 538/1000
+Test Accuracy Global Model: 67.65%
+------
+Round 539/1000
+Test Accuracy Global Model: 67.63%
+------
+Round 540/1000
+Test Accuracy Global Model: 67.65%
+------
+Round 541/1000
+Test Accuracy Global Model: 67.62%
+------
+Round 542/1000
+Test Accuracy Global Model: 67.61%
+------
+Round 543/1000
+Test Accuracy Global Model: 67.63%
+------
+Round 544/1000
+Test Accuracy Global Model: 67.64%
+------
+Round 545/1000
+Test Accuracy Global Model: 67.64%
+------
+Round 546/1000
+Test Accuracy Global Model: 67.64%
+------
+Round 547/1000
+Test Accuracy Global Model: 67.63%
+------
+Round 548/1000
+Test Accuracy Global Model: 67.65%
+------
+Round 549/1000
+Test Accuracy Global Model: 67.67%
+------
+Round 550/1000
+Test Accuracy Global Model: 67.67%
+------
+Round 551/1000
+Test Accuracy Global Model: 67.67%
+------
+Round 552/1000
+Test Accuracy Global Model: 67.65%
+------
+Round 553/1000
+Test Accuracy Global Model: 67.68%
+------
+Round 554/1000
+Test Accuracy Global Model: 67.65%
+------
+Round 555/1000
+Test Accuracy Global Model: 67.65%
+------
+Round 556/1000
+Test Accuracy Global Model: 67.64%
+------
+Round 557/1000
+Test Accuracy Global Model: 67.63%
+------
+Round 558/1000
+Test Accuracy Global Model: 67.62%
+------
+Round 559/1000
+Test Accuracy Global Model: 67.64%
+------
+Round 560/1000
+Test Accuracy Global Model: 67.62%
+------
+Round 561/1000
+Test Accuracy Global Model: 67.61%
+------
+Round 562/1000
+Test Accuracy Global Model: 67.61%
+------
+Round 563/1000
+Test Accuracy Global Model: 67.59%
+------
+Round 564/1000
+Test Accuracy Global Model: 67.61%
+------
+Round 565/1000
+Test Accuracy Global Model: 67.61%
+------
+Round 566/1000
+Test Accuracy Global Model: 67.60%
+------
+Round 567/1000
+Test Accuracy Global Model: 67.62%
+------
+Round 568/1000
+Test Accuracy Global Model: 67.61%
+------
+Round 569/1000
+Test Accuracy Global Model: 67.60%
+------
+Round 570/1000
+Test Accuracy Global Model: 67.59%
+------
+Round 571/1000
+Test Accuracy Global Model: 67.61%
+------
+Round 572/1000
+Test Accuracy Global Model: 67.60%
+------
+Round 573/1000
+Test Accuracy Global Model: 67.59%
+------
+Round 574/1000
+Test Accuracy Global Model: 67.59%
+------
+Round 575/1000
+Test Accuracy Global Model: 67.59%
+------
+Round 576/1000
+Test Accuracy Global Model: 67.59%
+------
+Round 577/1000
+Test Accuracy Global Model: 67.59%
+------
+Round 578/1000
+Test Accuracy Global Model: 67.59%
+------
+Round 579/1000
+Test Accuracy Global Model: 67.60%
+------
+Round 580/1000
+Test Accuracy Global Model: 67.60%
+------
+Round 581/1000
+Test Accuracy Global Model: 67.61%
+------
+Round 582/1000
+Test Accuracy Global Model: 67.60%
+------
+Round 583/1000
+Test Accuracy Global Model: 67.59%
+------
+Round 584/1000
+Test Accuracy Global Model: 67.60%
+------
+Round 585/1000
+Test Accuracy Global Model: 67.59%
+------
+Round 586/1000
+Test Accuracy Global Model: 67.58%
+------
+Round 587/1000
+Test Accuracy Global Model: 67.60%
+------
+Round 588/1000
+Test Accuracy Global Model: 67.60%
+------
+Round 589/1000
+Test Accuracy Global Model: 67.61%
+------
+Round 590/1000
+Test Accuracy Global Model: 67.59%
+------
+Round 591/1000
+Test Accuracy Global Model: 67.60%
+------
+Round 592/1000
+Test Accuracy Global Model: 67.60%
+------
+Round 593/1000
+Test Accuracy Global Model: 67.60%
+------
+Round 594/1000
+Test Accuracy Global Model: 67.59%
+------
+Round 595/1000
+Test Accuracy Global Model: 67.58%
+------
+Round 596/1000
+Test Accuracy Global Model: 67.57%
+------
+Round 597/1000
+Test Accuracy Global Model: 67.58%
+------
+Round 598/1000
+Test Accuracy Global Model: 67.58%
+------
+Round 599/1000
+Test Accuracy Global Model: 67.58%
+------
+Round 600/1000
+Test Accuracy Global Model: 67.58%
+------
+Round 601/1000
+Test Accuracy Global Model: 67.55%
+------
+Round 602/1000
+Test Accuracy Global Model: 67.55%
+------
+Round 603/1000
+Test Accuracy Global Model: 67.56%
+------
+Round 604/1000
+Test Accuracy Global Model: 67.54%
+------
+Round 605/1000
+Test Accuracy Global Model: 67.54%
+------
+Round 606/1000
+Test Accuracy Global Model: 67.52%
+------
+Round 607/1000
+Test Accuracy Global Model: 67.53%
+------
+Round 608/1000
+Test Accuracy Global Model: 67.53%
+------
+Round 609/1000
+Test Accuracy Global Model: 67.52%
+------
+Round 610/1000
+Test Accuracy Global Model: 67.53%
+------
+Round 611/1000
+Test Accuracy Global Model: 67.52%
+------
+Round 612/1000
+Test Accuracy Global Model: 67.53%
+------
+Round 613/1000
+Test Accuracy Global Model: 67.53%
+------
+Round 614/1000
+Test Accuracy Global Model: 67.54%
+------
+Round 615/1000
+Test Accuracy Global Model: 67.52%
+------
+Round 616/1000
+Test Accuracy Global Model: 67.53%
+------
+Round 617/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 618/1000
+Test Accuracy Global Model: 67.54%
+------
+Round 619/1000
+Test Accuracy Global Model: 67.54%
+------
+Round 620/1000
+Test Accuracy Global Model: 67.54%
+------
+Round 621/1000
+Test Accuracy Global Model: 67.53%
+------
+Round 622/1000
+Test Accuracy Global Model: 67.54%
+------
+Round 623/1000
+Test Accuracy Global Model: 67.52%
+------
+Round 624/1000
+Test Accuracy Global Model: 67.53%
+------
+Round 625/1000
+Test Accuracy Global Model: 67.53%
+------
+Round 626/1000
+Test Accuracy Global Model: 67.53%
+------
+Round 627/1000
+Test Accuracy Global Model: 67.52%
+------
+Round 628/1000
+Test Accuracy Global Model: 67.54%
+------
+Round 629/1000
+Test Accuracy Global Model: 67.53%
+------
+Round 630/1000
+Test Accuracy Global Model: 67.53%
+------
+Round 631/1000
+Test Accuracy Global Model: 67.53%
+------
+Round 632/1000
+Test Accuracy Global Model: 67.53%
+------
+Round 633/1000
+Test Accuracy Global Model: 67.52%
+------
+Round 634/1000
+Test Accuracy Global Model: 67.52%
+------
+Round 635/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 636/1000
+Test Accuracy Global Model: 67.53%
+------
+Round 637/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 638/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 639/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 640/1000
+Test Accuracy Global Model: 67.53%
+------
+Round 641/1000
+Test Accuracy Global Model: 67.53%
+------
+Round 642/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 643/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 644/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 645/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 646/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 647/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 648/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 649/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 650/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 651/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 652/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 653/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 654/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 655/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 656/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 657/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 658/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 659/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 660/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 661/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 662/1000
+Test Accuracy Global Model: 67.47%
+------
+Round 663/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 664/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 665/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 666/1000
+Test Accuracy Global Model: 67.52%
+------
+Round 667/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 668/1000
+Test Accuracy Global Model: 67.52%
+------
+Round 669/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 670/1000
+Test Accuracy Global Model: 67.52%
+------
+Round 671/1000
+Test Accuracy Global Model: 67.52%
+------
+Round 672/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 673/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 674/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 675/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 676/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 677/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 678/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 679/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 680/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 681/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 682/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 683/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 684/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 685/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 686/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 687/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 688/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 689/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 690/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 691/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 692/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 693/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 694/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 695/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 696/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 697/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 698/1000
+Test Accuracy Global Model: 67.47%
+------
+Round 699/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 700/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 701/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 702/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 703/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 704/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 705/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 706/1000
+Test Accuracy Global Model: 67.47%
+------
+Round 707/1000
+Test Accuracy Global Model: 67.47%
+------
+Round 708/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 709/1000
+Test Accuracy Global Model: 67.46%
+------
+Round 710/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 711/1000
+Test Accuracy Global Model: 67.46%
+------
+Round 712/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 713/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 714/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 715/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 716/1000
+Test Accuracy Global Model: 67.47%
+------
+Round 717/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 718/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 719/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 720/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 721/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 722/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 723/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 724/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 725/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 726/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 727/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 728/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 729/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 730/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 731/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 732/1000
+Test Accuracy Global Model: 67.46%
+------
+Round 733/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 734/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 735/1000
+Test Accuracy Global Model: 67.46%
+------
+Round 736/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 737/1000
+Test Accuracy Global Model: 67.47%
+------
+Round 738/1000
+Test Accuracy Global Model: 67.45%
+------
+Round 739/1000
+Test Accuracy Global Model: 67.46%
+------
+Round 740/1000
+Test Accuracy Global Model: 67.47%
+------
+Round 741/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 742/1000
+Test Accuracy Global Model: 67.47%
+------
+Round 743/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 744/1000
+Test Accuracy Global Model: 67.46%
+------
+Round 745/1000
+Test Accuracy Global Model: 67.47%
+------
+Round 746/1000
+Test Accuracy Global Model: 67.45%
+------
+Round 747/1000
+Test Accuracy Global Model: 67.46%
+------
+Round 748/1000
+Test Accuracy Global Model: 67.46%
+------
+Round 749/1000
+Test Accuracy Global Model: 67.45%
+------
+Round 750/1000
+Test Accuracy Global Model: 67.45%
+------
+Round 751/1000
+Test Accuracy Global Model: 67.45%
+------
+Round 752/1000
+Test Accuracy Global Model: 67.45%
+------
+Round 753/1000
+Test Accuracy Global Model: 67.46%
+------
+Round 754/1000
+Test Accuracy Global Model: 67.46%
+------
+Round 755/1000
+Test Accuracy Global Model: 67.46%
+------
+Round 756/1000
+Test Accuracy Global Model: 67.47%
+------
+Round 757/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 758/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 759/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 760/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 761/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 762/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 763/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 764/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 765/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 766/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 767/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 768/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 769/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 770/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 771/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 772/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 773/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 774/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 775/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 776/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 777/1000
+Test Accuracy Global Model: 67.52%
+------
+Round 778/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 779/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 780/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 781/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 782/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 783/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 784/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 785/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 786/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 787/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 788/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 789/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 790/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 791/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 792/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 793/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 794/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 795/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 796/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 797/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 798/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 799/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 800/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 801/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 802/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 803/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 804/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 805/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 806/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 807/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 808/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 809/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 810/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 811/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 812/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 813/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 814/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 815/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 816/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 817/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 818/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 819/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 820/1000
+Test Accuracy Global Model: 67.52%
+------
+Round 821/1000
+Test Accuracy Global Model: 67.52%
+------
+Round 822/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 823/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 824/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 825/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 826/1000
+Test Accuracy Global Model: 67.50%
+------
+Round 827/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 828/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 829/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 830/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 831/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 832/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 833/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 834/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 835/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 836/1000
+Test Accuracy Global Model: 67.51%
+------
+Round 837/1000
+Test Accuracy Global Model: 67.47%
+------
+Round 838/1000
+Test Accuracy Global Model: 67.47%
+------
+Round 839/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 840/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 841/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 842/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 843/1000
+Test Accuracy Global Model: 67.49%
+------
+Round 844/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 845/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 846/1000
+Test Accuracy Global Model: 67.47%
+------
+Round 847/1000
+Test Accuracy Global Model: 67.47%
+------
+Round 848/1000
+Test Accuracy Global Model: 67.46%
+------
+Round 849/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 850/1000
+Test Accuracy Global Model: 67.47%
+------
+Round 851/1000
+Test Accuracy Global Model: 67.48%
+------
+Round 852/1000
+Test Accuracy Global Model: 67.47%
+------
+Round 853/1000
+Test Accuracy Global Model: 67.46%
+------
+Round 854/1000
+Test Accuracy Global Model: 67.45%
+------
+Round 855/1000
+Test Accuracy Global Model: 67.45%
+------
+Round 856/1000
+Test Accuracy Global Model: 67.45%
+------
+Round 857/1000
+Test Accuracy Global Model: 67.45%
+------
+Round 858/1000
+Test Accuracy Global Model: 67.45%
+------
+Round 859/1000
+Test Accuracy Global Model: 67.46%
+------
+Round 860/1000
+Test Accuracy Global Model: 67.46%
+------
+Round 861/1000
+Test Accuracy Global Model: 67.46%
+------
+Round 862/1000
+Test Accuracy Global Model: 67.46%
+------
+Round 863/1000
+Test Accuracy Global Model: 67.46%
+------
+Round 864/1000
+Test Accuracy Global Model: 67.47%
+------
+Round 865/1000
+Test Accuracy Global Model: 67.46%
+------
+Round 866/1000
+Test Accuracy Global Model: 67.45%
+------
+Round 867/1000
+Test Accuracy Global Model: 67.45%
+------
+Round 868/1000
+Test Accuracy Global Model: 67.45%
+------
+Round 869/1000
+Test Accuracy Global Model: 67.44%
+------
+Round 870/1000
+Test Accuracy Global Model: 67.44%
+------
+Round 871/1000
+Test Accuracy Global Model: 67.44%
+------
+Round 872/1000
+Test Accuracy Global Model: 67.44%
+------
+Round 873/1000
+Test Accuracy Global Model: 67.44%
+------
+Round 874/1000
+Test Accuracy Global Model: 67.45%
+------
+Round 875/1000
+Test Accuracy Global Model: 67.45%
+------
+Round 876/1000
+Test Accuracy Global Model: 67.44%
+------
+Round 877/1000
+Test Accuracy Global Model: 67.44%
+------
+Round 878/1000
+Test Accuracy Global Model: 67.45%
+------
+Round 879/1000
+Test Accuracy Global Model: 67.45%
+------
+Round 880/1000
+Test Accuracy Global Model: 67.44%
+------
+Round 881/1000
+Test Accuracy Global Model: 67.44%
+------
+Round 882/1000
+Test Accuracy Global Model: 67.45%
+------
+Round 883/1000
+Test Accuracy Global Model: 67.43%
+------
+Round 884/1000
+Test Accuracy Global Model: 67.44%
+------
+Round 885/1000
+Test Accuracy Global Model: 67.44%
+------
+Round 886/1000
+Test Accuracy Global Model: 67.43%
+------
+Round 887/1000
+Test Accuracy Global Model: 67.43%
+------
+Round 888/1000
+Test Accuracy Global Model: 67.43%
+------
+Round 889/1000
+Test Accuracy Global Model: 67.42%
+------
+Round 890/1000
+Test Accuracy Global Model: 67.42%
+------
+Round 891/1000
+Test Accuracy Global Model: 67.42%
+------
+Round 892/1000
+Test Accuracy Global Model: 67.42%
+------
+Round 893/1000
+Test Accuracy Global Model: 67.42%
+------
+Round 894/1000
+Test Accuracy Global Model: 67.42%
+------
+Round 895/1000
+Test Accuracy Global Model: 67.42%
+------
+Round 896/1000
+Test Accuracy Global Model: 67.42%
+------
+Round 897/1000
+Test Accuracy Global Model: 67.42%
+------
+Round 898/1000
+Test Accuracy Global Model: 67.42%
+------
+Round 899/1000
+Test Accuracy Global Model: 67.41%
+------
+Round 900/1000
+Test Accuracy Global Model: 67.41%
+------
+Round 901/1000
+Test Accuracy Global Model: 67.42%
+------
+Round 902/1000
+Test Accuracy Global Model: 67.41%
+------
+Round 903/1000
+Test Accuracy Global Model: 67.41%
+------
+Round 904/1000
+Test Accuracy Global Model: 67.41%
+------
+Round 905/1000
+Test Accuracy Global Model: 67.41%
+------
+Round 906/1000
+Test Accuracy Global Model: 67.41%
+------
+Round 907/1000
+Test Accuracy Global Model: 67.40%
+------
+Round 908/1000
+Test Accuracy Global Model: 67.40%
+------
+Round 909/1000
+Test Accuracy Global Model: 67.41%
+------
+Round 910/1000
+Test Accuracy Global Model: 67.41%
+------
+Round 911/1000
+Test Accuracy Global Model: 67.41%
+------
+Round 912/1000
+Test Accuracy Global Model: 67.40%
+------
+Round 913/1000
+Test Accuracy Global Model: 67.41%
+------
+Round 914/1000
+Test Accuracy Global Model: 67.40%
+------
+Round 915/1000
+Test Accuracy Global Model: 67.40%
+------
+Round 916/1000
+Test Accuracy Global Model: 67.39%
+------
+Round 917/1000
+Test Accuracy Global Model: 67.40%
+------
+Round 918/1000
+Test Accuracy Global Model: 67.39%
+------
+Round 919/1000
+Test Accuracy Global Model: 67.38%
+------
+Round 920/1000
+Test Accuracy Global Model: 67.40%
+------
+Round 921/1000
+Test Accuracy Global Model: 67.38%
+------
+Round 922/1000
+Test Accuracy Global Model: 67.37%
+------
+Round 923/1000
+Test Accuracy Global Model: 67.39%
+------
+Round 924/1000
+Test Accuracy Global Model: 67.37%
+------
+Round 925/1000
+Test Accuracy Global Model: 67.38%
+------
+Round 926/1000
+Test Accuracy Global Model: 67.37%
+------
+Round 927/1000
+Test Accuracy Global Model: 67.37%
+------
+Round 928/1000
+Test Accuracy Global Model: 67.38%
+------
+Round 929/1000
+Test Accuracy Global Model: 67.37%
+------
+Round 930/1000
+Test Accuracy Global Model: 67.38%
+------
+Round 931/1000
+Test Accuracy Global Model: 67.38%
+------
+Round 932/1000
+Test Accuracy Global Model: 67.37%
+------
+Round 933/1000
+Test Accuracy Global Model: 67.37%
+------
+Round 934/1000
+Test Accuracy Global Model: 67.38%
+------
+Round 935/1000
+Test Accuracy Global Model: 67.37%
+------
+Round 936/1000
+Test Accuracy Global Model: 67.37%
+------
+Round 937/1000
+Test Accuracy Global Model: 67.37%
+------
+Round 938/1000
+Test Accuracy Global Model: 67.37%
+------
+Round 939/1000
+Test Accuracy Global Model: 67.36%
+------
+Round 940/1000
+Test Accuracy Global Model: 67.37%
+------
+Round 941/1000
+Test Accuracy Global Model: 67.37%
+------
+Round 942/1000
+Test Accuracy Global Model: 67.36%
+------
+Round 943/1000
+Test Accuracy Global Model: 67.36%
+------
+Round 944/1000
+Test Accuracy Global Model: 67.36%
+------
+Round 945/1000
+Test Accuracy Global Model: 67.37%
+------
+Round 946/1000
+Test Accuracy Global Model: 67.36%
+------
+Round 947/1000
+Test Accuracy Global Model: 67.36%
+------
+Round 948/1000
+Test Accuracy Global Model: 67.36%
+------
+Round 949/1000
+Test Accuracy Global Model: 67.37%
+------
+Round 950/1000
+Test Accuracy Global Model: 67.36%
+------
+Round 951/1000
+Test Accuracy Global Model: 67.37%
+------
+Round 952/1000
+Test Accuracy Global Model: 67.36%
+------
+Round 953/1000
+Test Accuracy Global Model: 67.36%
+------
+Round 954/1000
+Test Accuracy Global Model: 67.36%
+------
+Round 955/1000
+Test Accuracy Global Model: 67.37%
+------
+Round 956/1000
+Test Accuracy Global Model: 67.36%
+------
+Round 957/1000
+Test Accuracy Global Model: 67.36%
+------
+Round 958/1000
+Test Accuracy Global Model: 67.36%
+------
+Round 959/1000
+Test Accuracy Global Model: 67.36%
+------
+Round 960/1000
+Test Accuracy Global Model: 67.36%
+------
+Round 961/1000
+Test Accuracy Global Model: 67.36%
+------
+Round 962/1000
+Test Accuracy Global Model: 67.36%
+------
+Round 963/1000
+Test Accuracy Global Model: 67.36%
+------
+Round 964/1000
+Test Accuracy Global Model: 67.36%
+------
+Round 965/1000
+Test Accuracy Global Model: 67.36%
+------
+Round 966/1000
+Test Accuracy Global Model: 67.36%
+------
+Round 967/1000
+Test Accuracy Global Model: 67.35%
+------
+Round 968/1000
+Test Accuracy Global Model: 67.35%
+------
+Round 969/1000
+Test Accuracy Global Model: 67.35%
+------
+Round 970/1000
+Test Accuracy Global Model: 67.35%
+------
+Round 971/1000
+Test Accuracy Global Model: 67.34%
+------
+Round 972/1000
+Test Accuracy Global Model: 67.34%
+------
+Round 973/1000
+Test Accuracy Global Model: 67.34%
+------
+Round 974/1000
+Test Accuracy Global Model: 67.35%
+------
+Round 975/1000
+Test Accuracy Global Model: 67.34%
+------
+Round 976/1000
+Test Accuracy Global Model: 67.34%
+------
+Round 977/1000
+Test Accuracy Global Model: 67.34%
+------
+Round 978/1000
+Test Accuracy Global Model: 67.33%
+------
+Round 979/1000
+Test Accuracy Global Model: 67.35%
+------
+Round 980/1000
+Test Accuracy Global Model: 67.34%
+------
+Round 981/1000
+Test Accuracy Global Model: 67.34%
+------
+Round 982/1000
+Test Accuracy Global Model: 67.35%
+------
+Round 983/1000
+Test Accuracy Global Model: 67.34%
+------
+Round 984/1000
+Test Accuracy Global Model: 67.34%
+------
+Round 985/1000
+Test Accuracy Global Model: 67.34%
+------
+Round 986/1000
+Test Accuracy Global Model: 67.33%
+------
+Round 987/1000
+Test Accuracy Global Model: 67.33%
+------
+Round 988/1000
+Test Accuracy Global Model: 67.32%
+------
+Round 989/1000
+Test Accuracy Global Model: 67.31%
+------
+Round 990/1000
+Test Accuracy Global Model: 67.31%
+------
+Round 991/1000
+Test Accuracy Global Model: 67.31%
+------
+Round 992/1000
+Test Accuracy Global Model: 67.30%
+------
+Round 993/1000
+Test Accuracy Global Model: 67.31%
+------
+Round 994/1000
+Test Accuracy Global Model: 67.31%
+------
+Round 995/1000
+Test Accuracy Global Model: 67.31%
+------
+Round 996/1000
+Test Accuracy Global Model: 67.32%
+------
+Round 997/1000
+Test Accuracy Global Model: 67.32%
+------
+Round 998/1000
+Test Accuracy Global Model: 67.32%
+------
+Round 999/1000
+Test Accuracy Global Model: 67.33%
+------
+Round 1000/1000
+Test Accuracy Global Model: 67.33%
+------
+Time taken: 53381.07 seconds

@@ -1,0 +1,192 @@
+created virtual environment CPython3.11.5.final.0-64 in 1234ms
+  creator CPython3Posix(dest=/localscratch/mjmaher.38070037.0/env, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/mjmaher/.local/share/virtualenv)
+    added seed packages: pip==24.3.1, setuptools==75.3.0, wheel==0.44.0
+  activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/torch-2.5.1+computecanada-cp311-cp311-linux_x86_64.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/torchvision-0.20.1+computecanada-cp311-cp311-linux_x86_64.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/filelock-3.16.1+computecanada-py3-none-any.whl (from torch)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/typing_extensions-4.12.2+computecanada-py3-none-any.whl (from torch)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/networkx-3.4.2+computecanada-py3-none-any.whl (from torch)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/jinja2-3.1.4+computecanada-py3-none-any.whl (from torch)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/fsspec-2024.10.0+computecanada-py3-none-any.whl (from torch)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/sympy-1.13.1+computecanada-py3-none-any.whl (from torch)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/mpmath-1.3.0+computecanada-py3-none-any.whl (from sympy==1.13.1->torch)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/numpy-2.1.1+computecanada-cp311-cp311-linux_x86_64.whl (from torchvision)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/Pillow_SIMD-9.5.0.post2+computecanada-cp311-cp311-linux_x86_64.whl (from torchvision)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/MarkupSafe-2.1.5+computecanada-cp311-cp311-linux_x86_64.whl (from jinja2->torch)
+Installing collected packages: mpmath, typing-extensions, sympy, pillow-simd, numpy, networkx, MarkupSafe, fsspec, filelock, jinja2, torch, torchvision
+Successfully installed MarkupSafe-2.1.5+computecanada filelock-3.16.1+computecanada fsspec-2024.10.0+computecanada jinja2-3.1.4+computecanada mpmath-1.3.0+computecanada networkx-3.4.2+computecanada numpy-2.1.1+computecanada pillow-simd-9.5.0.post2+computecanada sympy-1.13.1+computecanada torch-2.5.1+computecanada torchvision-0.20.1+computecanada typing-extensions-4.12.2+computecanada
+Files already downloaded and verified
+Uniform data split
+Files already downloaded and verified
+------
+------
+Number of Clients: 50
+Number of Rounds: 50
+Local Epochs: 5
+Learning Rate: 0.1
+Batch Size: 16
+Dataset: CIFAR10
+Data Split: uniform
+------
+------
+SimpleCNN(
+  (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv2): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (fc1): Linear(in_features=4096, out_features=128, bias=True)
+  (fc2): Linear(in_features=128, out_features=10, bias=True)
+  (pool): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+)
+Round 1/50
+Test Accuracy Global Model: 45.08%
+------
+Round 2/50
+Test Accuracy Global Model: 52.10%
+------
+Round 3/50
+Test Accuracy Global Model: 56.98%
+------
+Round 4/50
+Test Accuracy Global Model: 59.87%
+------
+Round 5/50
+Test Accuracy Global Model: 61.60%
+------
+Round 6/50
+Test Accuracy Global Model: 62.96%
+------
+Round 7/50
+Test Accuracy Global Model: 63.83%
+------
+Round 8/50
+Test Accuracy Global Model: 64.32%
+------
+Round 9/50
+Test Accuracy Global Model: 64.95%
+------
+Round 10/50
+Test Accuracy Global Model: 65.42%
+------
+Round 11/50
+Test Accuracy Global Model: 66.16%
+------
+Round 12/50
+Test Accuracy Global Model: 66.68%
+------
+Round 13/50
+Test Accuracy Global Model: 67.35%
+------
+Round 14/50
+Test Accuracy Global Model: 67.62%
+------
+Round 15/50
+Test Accuracy Global Model: 67.88%
+------
+Round 16/50
+Test Accuracy Global Model: 67.93%
+------
+Round 17/50
+Test Accuracy Global Model: 68.24%
+------
+Round 18/50
+Test Accuracy Global Model: 68.38%
+------
+Round 19/50
+Test Accuracy Global Model: 68.62%
+------
+Round 20/50
+Test Accuracy Global Model: 68.81%
+------
+Round 21/50
+Test Accuracy Global Model: 68.84%
+------
+Round 22/50
+Test Accuracy Global Model: 69.03%
+------
+Round 23/50
+Test Accuracy Global Model: 69.13%
+------
+Round 24/50
+Test Accuracy Global Model: 69.33%
+------
+Round 25/50
+Test Accuracy Global Model: 69.33%
+------
+Round 26/50
+Test Accuracy Global Model: 69.33%
+------
+Round 27/50
+Test Accuracy Global Model: 69.62%
+------
+Round 28/50
+Test Accuracy Global Model: 69.63%
+------
+Round 29/50
+Test Accuracy Global Model: 69.67%
+------
+Round 30/50
+Test Accuracy Global Model: 69.58%
+------
+Round 31/50
+Test Accuracy Global Model: 69.65%
+------
+Round 32/50
+Test Accuracy Global Model: 69.51%
+------
+Round 33/50
+Test Accuracy Global Model: 69.52%
+------
+Round 34/50
+Test Accuracy Global Model: 69.45%
+------
+Round 35/50
+Test Accuracy Global Model: 69.49%
+------
+Round 36/50
+Test Accuracy Global Model: 69.80%
+------
+Round 37/50
+Test Accuracy Global Model: 69.53%
+------
+Round 38/50
+Test Accuracy Global Model: 69.71%
+------
+Round 39/50
+Test Accuracy Global Model: 69.70%
+------
+Round 40/50
+Test Accuracy Global Model: 69.69%
+------
+Round 41/50
+Test Accuracy Global Model: 69.82%
+------
+Round 42/50
+Test Accuracy Global Model: 69.71%
+------
+Round 43/50
+Test Accuracy Global Model: 69.77%
+------
+Round 44/50
+Test Accuracy Global Model: 69.70%
+------
+Round 45/50
+Test Accuracy Global Model: 69.45%
+------
+Round 46/50
+Test Accuracy Global Model: 69.61%
+------
+Round 47/50
+Test Accuracy Global Model: 69.50%
+------
+Round 48/50
+Test Accuracy Global Model: 69.36%
+------
+Round 49/50
+Test Accuracy Global Model: 69.33%
+------
+Round 50/50
+Test Accuracy Global Model: 69.34%
+------
+Time taken: 2697.77 seconds
