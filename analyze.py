@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Directory containing the .csv files
-input_directory = r"C:\Users\mjmah\OneDrive\Desktop\everything\Main\AfterAll\0-Canada\Term1\3-Special Topics\Project\outputs"
+input_directory = r"..."
 
 # Function to extract the batch size, clients, or learning rate from the filename
 def extract_metric_from_filename(file_name):
