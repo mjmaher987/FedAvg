@@ -1,6 +1,8 @@
 # FedAvg
 Reimplement the FedAvg from Scratch
 
+
+
 ## Introduction
 <img src="https://github.com/user-attachments/assets/c3101332-5ae3-427f-b43b-79347a66baa7" alt="image" width="500" />
 
