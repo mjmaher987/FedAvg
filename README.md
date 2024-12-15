@@ -78,7 +78,7 @@ This project implements a Federated Learning system based on the Federated Avera
 Run the script with command-line arguments to customize the Federated Learning setup:
 ```bash
 python script.py --lr <learning_rate> --epoch <local_epochs> --num_clients <num_clients> --num_rounds <num_rounds> --batch_size <batch_size> --data_split <data_split>
-
+```
 
 ## References
 
