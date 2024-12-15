@@ -1,44 +1,83 @@
 # FedAvg
-Reimplement the FedAvg from Scratch
+Implement the FedAvg from Scratch
 
+## Overview
+This project implements a Federated Learning system based on the Federated Averaging (FedAvg) algorithm. It includes functionalities for training models locally on multiple clients, aggregating their updates on a central server, and evaluating the global model on a test dataset.
 
+## Code Functionality
 
-## Introduction
-<img src="https://github.com/user-attachments/assets/c3101332-5ae3-427f-b43b-79347a66baa7" alt="image" width="500" />
+### Data Loading
+**Function:** `load_data`  
+- **Purpose:** Splits a dataset (CIFAR10 or MNIST) among a specified number of clients in either a uniform or non-uniform manner.  
+- **Inputs:**
+  - `dataset`: Dataset to load (`'CIFAR10'` or `'MNIST'`).
+  - `num_clients`: Number of clients to split the data among.
+  - `data_split`: Strategy for splitting data (`'uniform'` or `'non-uniform'`).
+- **Outputs:** List of `torch.utils.data.Subset` objects for each client.
 
-Federated Learning is a decentralized learning approach that aims to train a global model from clients with local datasets
-    
-**Global Update:**
+### Neural Network
+**Class:** `SimpleCNN`  
+- **Purpose:** Defines a simple convolutional neural network for image classification tasks.  
+- **Architecture:**
+  - Two convolutional layers with ReLU activation and max pooling.
+  - Two fully connected layers for classification.
+- **Inputs:**
+  - `input_channels`: Number of input channels (default: 1).
+  - `num_classes`: Number of output classes (default: 10).
+- **Outputs:** Logits (un-normalized scores) for each class.
 
-w_{t+1} = ∑{k=1}^K (n_k / n) w{t+1}^k
+### Model Aggregation
+**Function:** `FedAvg`  
+- **Purpose:** Averages the state dictionaries of client models to create a global model.  
+- **Inputs:**
+  - `state_dicts`: List of state dictionaries from client models.
+- **Outputs:** Averaged state dictionary for the global model.
 
-**Local Update (SGD):**
+### Local Training
+**Function:** `train_client`  
+- **Purpose:** Trains a client model locally on its subset of the dataset.  
+- **Inputs:**
+  - `client_model`: Model to be trained.
+  - `train_loader`: DataLoader for the client's training data.
+  - `criterion`: Loss function.
+  - `optimizer`: Optimization algorithm.
+  - `epochs`: Number of local training epochs (default: 5).
+- **Outputs:** Updated state dictionary of the client model after training.
 
-w_{t+1}^k = w_t - η ∇F_k(w)
+### Global Model Evaluation
+**Function:** `evaluate_model`  
+- **Purpose:** Evaluates the global model on a test dataset.  
+- **Inputs:**
+  - `model`: Model to evaluate.
+  - `test_loader`: DataLoader for the test dataset.
+- **Outputs:** Accuracy of the model on the test dataset (percentage).
 
-## Dataset
-I've used the CIFAR-10 dataset.
+### Federated Learning Algorithm
+**Function:** `federated_learning`  
+- **Purpose:** Implements the full Federated Learning pipeline.  
+- **Steps:**
+  1. Loads and splits data among clients.
+  2. Initializes the global model.
+  3. Trains local models on clients for multiple rounds.
+  4. Aggregates client models using FedAvg.
+  5. Evaluates the global model on the test dataset after each round.  
+- **Inputs:**
+  - `num_clients`: Number of clients participating.
+  - `dataset`: Dataset to use (`'CIFAR10'` or `'MNIST'`).
+  - `model_architecture`: Model class for client and global models (default: `SimpleCNN`).
+  - `num_rounds`: Number of training rounds.
+  - `local_epochs`: Number of epochs for local training.
+  - `learning_rate`: Learning rate for optimizers.
+  - `batch_size`: Batch size for training and testing.
+  - `datasplit`: Strategy for splitting data (`'uniform'` or `'non-uniform'`).
+- **Outputs:** Trained global model.
 
-<img src="https://github.com/user-attachments/assets/311c3f50-f0f1-4a4a-a901-10e1f4e18dde" alt='image' width=500/>
+## Usage
 
-## Model Structure
-I've used a simple 2-layer CNN.
-
-<img src="https://github.com/user-attachments/assets/b6dbd46f-d553-407b-9003-b992f2144c86" alt="image" width=500/>
-
-## Time Analysis
-<img src='https://github.com/user-attachments/assets/61f1effe-22ae-43df-b6b7-cd9c3c01b2f2' alt='image' widt=500/>
-
-## Results
-<img src='https://github.com/user-attachments/assets/599123f2-3edf-4ece-8cc9-cdaa6c9e0e91' alt='image' width=500/>
-
-## Discussion and Conclusion
-- **Learning Rate**: The learning rate must be carefully tuned as there is an optimal point.  
-- **Batch Size**: Larger sizes were faster but less accurate.  
-- **Clients**: More clients slowed training and required more rounds and epochs.  
-- **Epochs**: Higher epochs improved accuracy but greatly increased time.  
-- **Rounds**: Fewer rounds were faster but less accurate.  
-- **Optimal**: Moderate settings balanced time and accuracy.  
+### Running the Code
+Run the script with command-line arguments to customize the Federated Learning setup:
+```bash
+python script.py --lr <learning_rate> --epoch <local_epochs> --num_clients <num_clients> --num_rounds <num_rounds> --batch_size <batch_size> --data_split <data_split>
 
 
 ## References
